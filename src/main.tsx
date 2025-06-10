@@ -2,14 +2,4 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
-try {
-  const rootElement = document.getElementById("root");
-  if (!rootElement) {
-    throw new Error("Root element not found");
-  }
-  const root = createRoot(rootElement);
-  root.render(<App />);
-  console.log("App rendered successfully");
-} catch (error) {
-  console.error("Error rendering app:", error);
-}
+createRoot(document.getElementById("root")!).render(<App />);
