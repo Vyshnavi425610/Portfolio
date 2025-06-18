@@ -12,7 +12,7 @@
     "preview": "vite preview --base=/portfolio/",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "postbuild": "copy dist/index.html dist/404.html"
+    "postbuild": "copy dist\\index.html dist\\404.html"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
